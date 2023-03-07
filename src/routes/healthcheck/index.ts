@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 
+
 const router = express.Router();
 
 /**
@@ -14,5 +15,6 @@ const router = express.Router();
    *         description: App is up and running
    */
 router.get("/healthcheck", (req: Request, res: Response) => res.sendStatus(200));
+router.get("/healthcheckkk", (req: Request, res: Response) => res.sendStatus(200));
 
 export default router;
